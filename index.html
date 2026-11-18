@@ -64,7 +64,6 @@
     .button.primary { border-color: var(--accent); color: #fff; background: var(--accent); }
     .button.primary:hover { border-color: var(--accent-dark); background: var(--accent-dark); }
     .button:disabled { opacity: .5; cursor: not-allowed; }
-    .button input[type=file] { display: none; }
     .test-head { padding: 26px clamp(20px, 5vw, 42px) 22px; }
     .test-kicker { display: flex; justify-content: space-between; gap: 14px; align-items: center; color: var(--muted); font-size: 13px; }
     .test-title { margin: 8px 0 9px; font-size: clamp(24px, 4vw, 32px); letter-spacing: -.035em; }
@@ -149,19 +148,18 @@
     <section class="hero">
       <p class="eyebrow">Practice · Check · Improve</p>
       <h1>Take a test at your pace.</h1>
-      <p class="subtitle">Load a JSON test, answer each question, then submit to see your score and corrections. Sign in to keep a private history of your results.</p>
+      <p class="subtitle">Choose a test from the catalog, answer each question, then submit to see your score and corrections. Sign in to keep a private history of your results.</p>
     </section>
 
     <section class="panel" aria-live="polite">
       <div class="loader">
-        <div class="loader-copy"><strong id="loadLabel">No test loaded yet</strong><span id="loadHint">Choose a test JSON file to begin.</span></div>
+        <div class="loader-copy"><strong id="loadLabel">No test selected yet</strong><span id="loadHint">Choose a test from the catalog to begin.</span></div>
         <select id="testSelect" class="catalog-select hidden" aria-label="Choose a test"><option value="">Choose a test…</option></select>
-        <label class="button" for="jsonFile">＋ Load test JSON<input id="jsonFile" type="file" accept="application/json,.json"></label>
       </div>
       <div id="empty" class="empty">
-        <div class="empty-icon">↥</div>
+        <div class="empty-icon">✓</div>
         <h2>Choose a test</h2>
-        <p>On the hosted page, select a test from the catalog. When opening this file directly, load a JSON file that follows the format described in README.md.</p>
+        <p>Select a test from the catalog above to see its questions and begin.</p>
       </div>
       <div id="testArea" class="hidden">
         <div class="test-head">
@@ -538,18 +536,6 @@
         URL.revokeObjectURL(url);
       }
 
-      $("jsonFile").addEventListener("change", async event => {
-        const file = event.target.files?.[0];
-        if (!file) return;
-        try {
-          const data = JSON.parse(await file.text());
-          renderTest(data, null);
-          toast(`Loaded ${file.name}`);
-        } catch (error) {
-          toast(error instanceof SyntaxError ? "That file is not valid JSON." : error.message);
-        }
-        event.target.value = "";
-      });
       $("submitButton").addEventListener("click", submit);
       $("resetButton").addEventListener("click", reset);
       $("copyButton").addEventListener("click", copySubmission);
@@ -570,9 +556,9 @@
           });
           if (catalog.tests.length) {
             $("testSelect").classList.remove("hidden");
-            $("loadHint").textContent = `${catalog.tests.length} tests in the catalog, or load a JSON file.`;
+            $("loadHint").textContent = `${catalog.tests.length} tests available in the catalog.`;
           }
-        } catch { /* Direct file opens can still use the JSON file picker. */ }
+        } catch { $("loadHint").textContent = "The test catalog is unavailable right now."; }
       }
 
       async function loadSiteConfig() {
@@ -584,7 +570,7 @@
             evaluatorEndpoint = config.evaluatorEndpoint;
             $("loadHint").textContent = `${$("loadHint").textContent} · AI grading is available`;
           }
-        } catch { /* Local file use keeps the built-in answer-key checker. */ }
+        } catch { /* Tests remain available with the built-in answer-key checker. */ }
       }
 
       $("testSelect").addEventListener("change", async event => {
