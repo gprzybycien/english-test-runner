@@ -40,6 +40,14 @@
     .brand { display: flex; align-items: center; gap: 11px; font-weight: 750; letter-spacing: -.02em; }
     .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; color: white; background: var(--accent); font-size: 18px; }
     .top-note { color: var(--muted); font-size: 13px; }
+    .account-box { display: flex; align-items: center; gap: 12px; }
+    .account-label { color: var(--muted); font-size: 13px; }
+    .auth-panel { width: min(900px, calc(100% - 32px)); margin: 16px auto 0; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    .auth-panel form { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; }
+    .auth-panel input { min-height: 40px; width: min(240px, 100%); padding: 8px 10px; border: 1px solid #d0d5dd; border-radius: 9px; }
+    .auth-help, .auth-message { margin: 7px 0 0; color: var(--muted); font-size: 13px; }
+    .history-list { margin: 12px 0 0; padding: 0; list-style: none; }
+    .history-list li { padding: 9px 0; border-top: 1px solid var(--line); font-size: 13px; }
     main { width: min(900px, calc(100% - 32px)); margin: 46px auto 80px; }
     .hero { margin: 0 0 25px; }
     .eyebrow { margin: 0 0 7px; color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
@@ -107,6 +115,7 @@
     @media (max-width: 540px) {
       main { margin-top: 28px; }
       .top-note { display: none; }
+      .account-label { display: none; }
       .loader { align-items: stretch; }
       .loader .button { flex: 1 1 100%; }
       .question { grid-template-columns: 30px 1fr; gap: 8px; }
@@ -119,13 +128,26 @@
 <body>
   <header class="topbar">
     <div class="brand"><span class="brand-mark">✓</span><span>Test Desk</span></div>
-    <div class="top-note">A simple, local quiz runner</div>
+    <div class="account-box"><span class="account-label" id="accountLabel">Sign in to save test history</span><button class="button" id="accountToggle" type="button">Account</button></div>
   </header>
+  <section class="auth-panel hidden" id="authPanel" aria-label="Account and test history">
+    <form id="authForm">
+      <input id="authName" type="text" autocomplete="name" placeholder="Name (for new account)" aria-label="Name">
+      <input id="authEmail" type="email" autocomplete="email" placeholder="Email" aria-label="Email" required>
+      <input id="authPassword" type="password" autocomplete="current-password" placeholder="Password" aria-label="Password" required>
+      <button class="button primary" id="signInButton" type="submit">Sign in</button>
+      <button class="button" id="signUpButton" type="button">Create account</button>
+      <button class="button hidden" id="signOutButton" type="button">Sign out</button>
+    </form>
+    <p class="auth-help">Sign in to keep a private history of your scores and corrections on this account.</p>
+    <p class="auth-message" id="authMessage" role="status">Checking account setup…</p>
+    <ul class="history-list" id="historyList"></ul>
+  </section>
   <main>
     <section class="hero">
       <p class="eyebrow">Practice · Check · Improve</p>
       <h1>Take a test at your pace.</h1>
-      <p class="subtitle">Load a JSON test, answer each question, then submit to see your score and corrections. Your answers stay in this browser until you export them.</p>
+      <p class="subtitle">Load a JSON test, answer each question, then submit to see your score and corrections. Sign in to keep a private history of your results.</p>
     </section>
 
     <section class="panel" aria-live="polite">
@@ -164,6 +186,7 @@
   </main>
   <div id="toast" class="toast" role="status"></div>
 
+  <script type="module" src="./auth.js"></script>
   <script>
     (() => {
       const $ = (id) => document.getElementById(id);
@@ -367,6 +390,7 @@
           score: { autoEarned: earned, autoPossible: possible, manualPending: manualCount, manualMaxPoints: manualPossible, percent: possible ? Math.round(earned / possible * 100) : 0 },
           answers
         };
+        window.TestDeskAuth?.saveAttempt(latestSubmission);
         $("scoreText").textContent = manualCount ? `${earned} / ${possible} + ${manualCount} to review` : `${earned} / ${possible}`;
         $("resultHeading").textContent = manualCount ? `Provisional score: ${latestSubmission.score.percent}%` : `Score: ${latestSubmission.score.percent}%`;
         $("resultDetail").textContent = manualCount
@@ -377,7 +401,7 @@
         $("copyButton").classList.remove("hidden");
         $("downloadButton").classList.remove("hidden");
         $("resetButton").textContent = "Try again";
-        $("statusText").textContent = "Submitted. Answers are checked locally; no answers have been sent anywhere.";
+        $("statusText").textContent = "Submitted. Answers were checked locally; sign in to save this result to your private history.";
       }
 
       async function evaluateWithAI() {
@@ -457,6 +481,7 @@
             summary: result.summary || "",
             answers: submissionAnswers
           };
+          window.TestDeskAuth?.saveAttempt(latestSubmission);
           $("scoreText").textContent = `${earned} / ${possible}`;
           $("resultHeading").textContent = `AI-reviewed score: ${latestSubmission.score.percent}%`;
           $("resultDetail").textContent = `${result.summary || "Review the feedback beside each answer."} Results are suggestions; a teacher can review them.`;
@@ -465,7 +490,7 @@
           $("copyButton").classList.remove("hidden");
           $("downloadButton").classList.remove("hidden");
           $("resetButton").textContent = "Try again";
-          $("statusText").textContent = "AI grading finished. The test, answer key and responses were sent to the configured OpenAI endpoint; nothing was saved by this page.";
+          $("statusText").textContent = "AI grading finished. The test and answers were sent to the configured evaluator; sign in to save this result to your private history.";
         } catch (error) {
           $("statusText").textContent = error.message || "Could not reach the AI grader. Your answers are still on this page.";
           toast("AI grading failed. Answers are still here; you can try again.");

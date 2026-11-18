@@ -1,3 +1,5 @@
 {
-  "evaluatorEndpoint": ""
+  "evaluatorEndpoint": "",
+  "neonAuthUrl": "https://ep-steep-butterfly-baxwyufp.neonauth.c-8.eu-central-1.aws.neon.tech/neondb/auth",
+  "neonDataApiUrl": "https://ep-steep-butterfly-baxwyufp.apirest.c-8.eu-central-1.aws.neon.tech/neondb/rest/v1"
 }
