@@ -3,6 +3,21 @@
   "title": "Szyk zdania · od SVO do pytań",
   "topic": "Gramatyka angielska · Present Simple, Present Continuous, Past Simple",
   "instructions": "Wpisz całe zdanie po angielsku. Zwróć uwagę na kolejność podmiotu, operatora i czasownika głównego. W twierdzeniach użyj zwykłego szyku SVO (podmiot + czasownik + dopełnienie). W pytaniach postaw operator przed podmiotem. Wielka litera i znak końcowy są mile widziane.",
+  "studyGuide": {
+    "title": "SVO — rozwiń, aby przypomnieć sobie szyk zdania",
+    "intro": "SVO to skrót od angielskich nazw trzech głównych części zdania: Subject – Verb – Object, czyli Podmiot – Orzeczenie – Dopełnienie. W standardowym zdaniu twierdzącym najpierw podajemy wykonawcę czynności, potem samą czynność, a na końcu jej odbiorcę lub przedmiot.",
+    "parts": [
+      { "letter": "S", "name": "Subject (Podmiot)", "description": "Wykonawca czynności, czyli osoba, zwierzę lub rzecz, o której mówimy. Odpowiada na pytania: kto? co? Przykłady: Tom, she, the dog." },
+      { "letter": "V", "name": "Verb (Orzeczenie)", "description": "Czynność lub stan, czyli czasownik. Odpowiada na pytania: co robi? co się z nim dzieje? Przykłady: eats, likes, is." },
+      { "letter": "O", "name": "Object (Dopełnienie)", "description": "Osoba lub rzecz, na którą skierowana jest czynność. Odpowiada na pytania przypadków zależnych, np. kogo? co? komu? czemu? Przykłady: an apple, music, me." }
+    ],
+    "examples": [
+      { "sentence": "Tom (S) + eats (V) + an apple (O).", "translation": "Tom je jabłko." },
+      { "sentence": "She (S) + likes (V) + dogs (O).", "translation": "Ona lubi psy." },
+      { "sentence": "We (S) + watch (V) + movies (O).", "translation": "Oglądamy filmy." }
+    ],
+    "importance": "Dlaczego to ważne? W języku polskim odmiana przez przypadki pozwala przestawiać słowa bez zmiany ich ról. W angielskim kolejność SVO pomaga rozpoznać, kto wykonuje czynność, a kto jej podlega. The dog chases the cat oznacza, że pies goni kota; The cat chases the dog oznacza, że kot goni psa."
+  },
   "sections": [
     {
       "title": "1 · Twierdzenia: podmiot + czasownik + dopełnienie",

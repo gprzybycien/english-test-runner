@@ -68,6 +68,16 @@
     .test-kicker { display: flex; justify-content: space-between; gap: 14px; align-items: center; color: var(--muted); font-size: 13px; }
     .test-title { margin: 8px 0 9px; font-size: clamp(24px, 4vw, 32px); letter-spacing: -.035em; }
     .test-instructions { margin: 0; color: #475467; }
+    .study-guide { margin: 0 clamp(20px, 5vw, 42px) 20px; border: 1px solid #d6def6; border-radius: 13px; background: #f7f8ff; }
+    .study-guide summary { padding: 13px 16px; color: #2649a8; font-weight: 750; cursor: pointer; }
+    .study-guide summary::marker { color: var(--accent); }
+    .study-guide-content { padding: 0 18px 16px; color: #344054; font-size: 14px; line-height: 1.65; }
+    .study-guide-content > p { margin: 0 0 12px; }
+    .study-guide-parts { display: grid; gap: 6px; margin: 0 0 14px; padding: 0; list-style: none; }
+    .study-guide-parts strong { color: var(--ink); }
+    .study-guide-examples { display: grid; gap: 8px; margin: 0 0 14px; padding: 0; list-style: none; }
+    .study-guide-example { padding: 9px 11px; border-radius: 9px; background: #fff; }
+    .study-guide-example em { display: block; color: var(--muted); font-style: normal; }
     .progress-wrap { height: 6px; background: #eef1f6; }
     .progress { width: 0; height: 100%; background: var(--accent); transition: width .2s ease; }
     #questions { padding: 0 clamp(20px, 5vw, 42px) 12px; }
@@ -167,7 +177,7 @@
           <h2 class="test-title" id="testTitle"></h2>
           <p class="test-instructions" id="testInstructions"></p>
         </div>
-        <div class="progress-wrap"><div class="progress" id="progressBar"></div></div>
+        <div class="progress-wrap" id="progressWrap"><div class="progress" id="progressBar"></div></div>
         <div id="questions"></div>
         <div class="result" id="resultBox">
           <div class="score" id="scoreText"></div>
@@ -247,6 +257,61 @@
         return fragment;
       }
 
+      function renderStudyGuide(guide) {
+        if (!guide || !guide.title) return null;
+        const details = document.createElement("details");
+        details.className = "study-guide";
+        const summary = document.createElement("summary");
+        summary.textContent = guide.title;
+        details.append(summary);
+        const content = document.createElement("div");
+        content.className = "study-guide-content";
+        if (guide.intro) {
+          const intro = document.createElement("p");
+          intro.textContent = guide.intro;
+          content.append(intro);
+        }
+        if (Array.isArray(guide.parts) && guide.parts.length) {
+          const parts = document.createElement("ul");
+          parts.className = "study-guide-parts";
+          guide.parts.forEach(part => {
+            const item = document.createElement("li");
+            const label = document.createElement("strong");
+            label.textContent = `${part.letter} – ${part.name}: `;
+            item.append(label, document.createTextNode(part.description || ""));
+            parts.append(item);
+          });
+          content.append(parts);
+        }
+        if (Array.isArray(guide.examples) && guide.examples.length) {
+          const heading = document.createElement("p");
+          const label = document.createElement("strong");
+          label.textContent = "Przykłady w praktyce";
+          heading.append(label);
+          content.append(heading);
+          const examples = document.createElement("ul");
+          examples.className = "study-guide-examples";
+          guide.examples.forEach(example => {
+            const item = document.createElement("li");
+            item.className = "study-guide-example";
+            const sentence = document.createElement("strong");
+            sentence.textContent = example.sentence || "";
+            const translation = document.createElement("em");
+            translation.textContent = example.translation || "";
+            item.append(sentence, translation);
+            examples.append(item);
+          });
+          content.append(examples);
+        }
+        if (guide.importance) {
+          const importance = document.createElement("p");
+          importance.textContent = guide.importance;
+          content.append(importance);
+        }
+        details.append(content);
+        return details;
+      }
+
       function renderTest(data, baseUrl = null) {
         validTest(data);
         currentTest = data;
@@ -260,6 +325,9 @@
         $("testTopic").textContent = data.topic || "Practice test";
         $("testTitle").textContent = data.title;
         $("testInstructions").textContent = data.instructions || "Answer every question, then submit to check your work.";
+        $("testArea").querySelector(".study-guide")?.remove();
+        const guide = renderStudyGuide(data.studyGuide);
+        if (guide) $("testArea").insertBefore(guide, $("progressWrap"));
         $("questions").replaceChildren();
         let number = 0;
         data.sections.forEach((section, sectionIndex) => {
