@@ -646,7 +646,7 @@
         if (!file) return;
         try {
           const url = new URL(file, document.baseURI);
-          const response = await fetch(url);
+          const response = await fetch(url, { cache: "no-store" });
           if (!response.ok) throw new Error(`Could not load ${file} (${response.status}).`);
           renderTest(await response.json(), url);
           toast(`Loaded ${event.target.selectedOptions[0].textContent}`);
