@@ -1,6 +1,11 @@
 {
   "tests": [
     {
+      "id": "word-order-sentence-structure",
+      "title": "Szyk zdania · od SVO do pytań",
+      "file": "tests/word-order-sentence-structure/test.json"
+    },
+    {
       "id": "unit-0-everyday-english",
       "title": "Unit 0 · Everyday English",
       "file": "tests/unit-0-everyday-english/test.json"
