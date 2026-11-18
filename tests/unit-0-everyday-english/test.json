@@ -1,0 +1,61 @@
+{
+  "id": "unit-0-everyday-english-practice",
+  "title": "Unit 0 · Everyday English",
+  "topic": "English · vocabulary and present simple",
+  "instructions": "Complete each answer in English. Use full words and check spelling before submitting.",
+  "sections": [
+    {
+      "title": "1 · School and getting around",
+      "instructions": "Complete each sentence with the missing word or phrase.",
+      "questions": [
+        { "id": "school-transport-1", "type": "text", "prompt": "I walk to school. I go to school ___. (on foot)", "answer": "on foot", "points": 1 },
+        { "id": "school-transport-2", "type": "text", "prompt": "We took a ___ to the airport. (taksówka)", "accepted": ["taxi", "a taxi"], "points": 1 },
+        { "id": "school-place-1", "type": "text", "prompt": "We eat lunch in the school ___.", "answer": "canteen", "points": 1 },
+        { "id": "school-place-2", "type": "text", "prompt": "Our teacher prints worksheets in the ___.", "accepted": ["staff room", "teachers' room", "teacher's room"], "points": 1 },
+        { "id": "school-place-3", "type": "text", "prompt": "We use computers in the ___.", "answer": "computer room", "points": 1 },
+        { "id": "school-subject", "type": "text", "prompt": "We learn about the past in ___ lessons.", "answer": "history", "points": 1 },
+        { "id": "school-subject-pe", "type": "text", "prompt": "For ___, wear trainers and comfortable clothes. (PE)", "accepted": ["PE", "P.E."], "points": 1 }
+      ]
+    },
+    {
+      "title": "2 · Food and containers",
+      "instructions": "Write the best word or phrase for each clue.",
+      "questions": [
+        { "id": "food-piece-chocolate", "type": "text", "prompt": "A small amount cut from a larger chocolate bar: a ___ of chocolate.", "accepted": ["piece", "piece of chocolate"], "points": 1 },
+        { "id": "food-jar", "type": "text", "prompt": "Jam is usually kept in a ___.", "answer": "jar", "points": 1 },
+        { "id": "food-bottle", "type": "text", "prompt": "Water and juice are often sold in a ___.", "answer": "bottle", "points": 1 },
+        { "id": "food-can", "type": "text", "prompt": "A metal container for a fizzy drink is a ___.", "accepted": ["can", "tin"], "points": 1 },
+        { "id": "food-slice", "type": "text", "prompt": "A thin piece cut from a loaf of bread is a ___ of bread.", "answer": "slice", "points": 1 },
+        { "id": "food-spoon", "type": "text", "prompt": "A small amount of salt used in cooking is a ___ of salt.", "answer": "spoonful", "accepted": ["spoonful", "teaspoonful"], "points": 1 },
+        { "id": "food-box", "type": "text", "prompt": "You pack books for moving house in a ___.", "answer": "box", "points": 1 }
+      ]
+    },
+    {
+      "title": "3 · Jobs and places",
+      "instructions": "Complete the sentences with a job or a place of work.",
+      "questions": [
+        { "id": "job-receptionist", "type": "text", "prompt": "A receptionist welcomes guests and works in a ___.", "answer": "hotel", "points": 1 },
+        { "id": "job-doctor", "type": "text", "prompt": "A doctor usually works in a ___.", "answer": "hospital", "points": 1 },
+        { "id": "job-teacher", "type": "text", "prompt": "A teacher works at a ___.", "answer": "school", "points": 1 },
+        { "id": "job-pilot", "type": "text", "prompt": "A ___ flies a plane. (job)", "answer": "pilot", "points": 1 },
+        { "id": "job-chef", "type": "text", "prompt": "A ___ prepares food in a restaurant. (job)", "answer": "chef", "points": 1 },
+        { "id": "job-police", "type": "text", "prompt": "Police officers work at a police ___.", "answer": "station", "accepted": ["station", "police station"], "points": 1 },
+        { "id": "job-farmer", "type": "text", "prompt": "A farmer grows crops and looks after animals on a ___.", "answer": "farm", "points": 1 }
+      ]
+    },
+    {
+      "title": "4 · Present simple and adjective + preposition",
+      "instructions": "Use the correct present simple form or complete the collocation.",
+      "questions": [
+        { "id": "present-simple-question", "type": "text", "prompt": "___ she ___ in a big city? (live)", "answer": "Does she live", "points": 1 },
+        { "id": "present-simple-negative", "type": "text", "prompt": "I ___ my smart clothes very often. (not wear)", "answer": "don't wear", "accepted": ["do not wear"], "points": 1 },
+        { "id": "present-simple-third-person", "type": "text", "prompt": "Our dog usually ___ for us by the door. (wait)", "answer": "waits", "points": 1 },
+        { "id": "present-simple-do", "type": "text", "prompt": "___ you ___ the plants every day? (water)", "answer": "Do you water", "points": 1 },
+        { "id": "collocation-scared", "type": "text", "prompt": "I'm ___ ___ getting lost in a big city. (afraid)", "answer": "scared of", "accepted": ["afraid of"], "points": 1 },
+        { "id": "collocation-worried", "type": "text", "prompt": "She's ___ ___ tomorrow's test.", "answer": "worried about", "points": 1 },
+        { "id": "collocation-excited", "type": "text", "prompt": "We're ___ ___ our school trip.", "answer": "excited about", "points": 1 },
+        { "id": "collocation-good", "type": "text", "prompt": "He is ___ ___ playing football.", "answer": "good at", "points": 1 }
+      ]
+    }
+  ]
+}

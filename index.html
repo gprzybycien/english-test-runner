@@ -75,6 +75,7 @@
     .section { margin: 22px 0 28px; }
     .section h2 { margin: 0; padding: 14px 0 8px; border-top: 1px solid var(--line); font-size: 18px; }
     .section-note { margin: 0 0 13px; color: var(--muted); font-size: 13px; }
+    .section-passage { margin: 14px 0; padding: 15px 17px; border: 1px solid var(--line); border-radius: 12px; background: #fbfcff; line-height: 1.7; }
     .question {
       display: grid; grid-template-columns: 38px 1fr; gap: 12px;
       padding: 13px 0; border-bottom: 1px solid #f0f1f4;
@@ -275,6 +276,12 @@
             note.textContent = section.instructions;
             block.append(note);
           }
+          if (section.passage) {
+            const passage = document.createElement("div");
+            passage.className = "section-passage";
+            passage.textContent = section.passage;
+            block.append(passage);
+          }
           block.append(renderImages(section.images || section.image));
           section.questions.forEach(question => {
             number++;
@@ -420,6 +427,7 @@
               sections: currentTest.sections.map(section => ({
                 title: section.title,
                 instructions: section.instructions || "",
+                passage: section.passage || "",
                 questions: section.questions.map(question => ({
                   id: question.id,
                   type: question.type,

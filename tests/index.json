@@ -1,6 +1,16 @@
 {
   "tests": [
     {
+      "id": "unit-0-everyday-english",
+      "title": "Unit 0 · Everyday English",
+      "file": "tests/unit-0-everyday-english/test.json"
+    },
+    {
+      "id": "unit-1-home-and-routines",
+      "title": "Unit 1 · Home and routines",
+      "file": "tests/unit-1-home-and-routines/test.json"
+    },
+    {
       "id": "unit-2-shopping",
       "title": "Unit 2 · Shopping and comparisons",
       "file": "tests/unit-2-shopping/test.json"

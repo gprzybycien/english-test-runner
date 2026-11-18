@@ -1,0 +1,67 @@
+{
+  "id": "unit-1-home-and-routines-practice",
+  "title": "Unit 1 · Home and routines",
+  "topic": "English · chores, routines, and present continuous",
+  "instructions": "Answer in English. The reading passage is original practice material. For the final writing task, write 70–80 words; it will be sent for AI review when an evaluator is configured.",
+  "sections": [
+    {
+      "title": "1 · Chores and routines",
+      "instructions": "Complete each sentence with the correct chore or phrase.",
+      "questions": [
+        { "id": "chore-feed-dog", "type": "text", "prompt": "Give food to your pet: ___ the dog.", "answer": "feed", "points": 1 },
+        { "id": "chore-hang", "type": "text", "prompt": "Put wet clothes outside to dry: ___ the washing out.", "answer": "hang", "points": 1 },
+        { "id": "chore-load", "type": "text", "prompt": "Put dirty clothes into the machine: ___ the washing machine.", "answer": "load", "points": 1 },
+        { "id": "chore-vacuum", "type": "text", "prompt": "Clean the carpet with a vacuum cleaner: ___ the floor.", "answer": "vacuum", "accepted": ["vacuum", "hoover"], "points": 1 },
+        { "id": "chore-tidy", "type": "text", "prompt": "Put clothes and belongings in order: ___ your room.", "answer": "tidy", "points": 1 },
+        { "id": "chore-iron", "type": "text", "prompt": "Make clothes smooth with a hot iron: ___ your clothes.", "answer": "iron", "points": 1 },
+        { "id": "chore-rubbish", "type": "text", "prompt": "Take the rubbish ___ before it gets too full.", "answer": "out", "points": 1 },
+        { "id": "chore-table", "type": "text", "prompt": "Put plates and cutlery on the table before dinner: ___ the table.", "answer": "set", "accepted": ["set", "lay"], "points": 1 },
+        { "id": "chore-wash", "type": "text", "prompt": "Clean plates after a meal: ___ the dishes.", "answer": "wash", "accepted": ["wash", "do"], "points": 1 }
+      ]
+    },
+    {
+      "title": "2 · Present continuous and offers",
+      "instructions": "Complete the questions and short answers. Use the present continuous where needed.",
+      "questions": [
+        { "id": "continuous-writing", "type": "text", "prompt": "___ you ___ your homework right now? (do)", "answer": "Are you doing", "points": 1 },
+        { "id": "continuous-negative", "type": "text", "prompt": "No, I ___. I'm making dinner.", "answer": "am not", "accepted": ["'m not", "am not"], "points": 1 },
+        { "id": "continuous-teacher", "type": "text", "prompt": "Is the teacher ___ at the moment? (stand)", "answer": "standing", "points": 1 },
+        { "id": "continuous-dishes", "type": "text", "prompt": "Yes, she ___. She's putting the clean plates away.", "answer": "is", "accepted": ["she is", "is"], "points": 1 },
+        { "id": "offer-help", "type": "text", "prompt": "A: Can you help me with the chores? B: Yes, ___. (agree to help)", "accepted": ["of course", "sure", "certainly", "no problem"], "points": 1 },
+        { "id": "offer-table", "type": "text", "prompt": "Complete the offer: ___ I set the table for you?", "answer": "Shall", "points": 1 },
+        { "id": "offer-cooking", "type": "text", "prompt": "A: Do you need any help with dinner? B: Yes, ___. (polite reply)", "accepted": ["please", "please do", "that would be great"], "points": 1 }
+      ]
+    },
+    {
+      "title": "3 · Personality words",
+      "instructions": "Choose a suitable personality adjective from the clue in each sentence.",
+      "questions": [
+        { "id": "personality-quiet", "type": "text", "prompt": "My dad doesn't talk a lot, but he always listens to us. He's ___.", "answer": "quiet", "points": 1 },
+        { "id": "personality-patient", "type": "text", "prompt": "My mum doesn't get angry when the house is messy. She's very ___.", "answer": "patient", "points": 1 },
+        { "id": "personality-untidy", "type": "text", "prompt": "My room is ___ because I leave clothes on the floor.", "answer": "untidy", "accepted": ["messy", "untidy"], "points": 1 },
+        { "id": "personality-argumentative", "type": "text", "prompt": "They are ___; they often argue about small things.", "answer": "argumentative", "accepted": ["argumentative", "bad-tempered"], "points": 1 },
+        { "id": "personality-organised", "type": "text", "prompt": "My aunt plans everything and always knows where things are. She's very ___.", "answer": "organised", "accepted": ["organised", "organized"], "points": 1 },
+        { "id": "personality-tidy", "type": "text", "prompt": "I like putting everything in the right place. I'm ___.", "answer": "tidy", "accepted": ["tidy", "organised", "organized"], "points": 1 }
+      ]
+    },
+    {
+      "title": "4 · Reading: Saturday at home",
+      "instructions": "Read the passage and answer in a word or short phrase.",
+      "passage": "On Saturdays, Lena gets up at seven and makes her bed. After breakfast, she loads the washing machine while her brother Max feeds their two cats. Their dad waters the plants, and Mum prepares lunch. This morning, Lena is not doing the laundry; she is helping Max tidy the living room. In the afternoon, the family often visits Grandma. Max enjoys cooking with her because she is patient and teaches him new recipes. Before they leave, Lena takes the rubbish out.",
+      "questions": [
+        { "id": "reading-lena-time", "type": "text", "prompt": "What does Lena do after she gets up?", "accepted": ["makes her bed", "she makes her bed"], "points": 1 },
+        { "id": "reading-max-pets", "type": "text", "prompt": "Who feeds the cats?", "accepted": ["Max", "her brother Max"], "points": 1 },
+        { "id": "reading-current", "type": "text", "prompt": "What is Lena doing this morning?", "accepted": ["helping Max tidy the living room", "she is helping Max tidy the living room", "tidying the living room with Max"], "points": 1 },
+        { "id": "reading-grandma", "type": "text", "prompt": "Why does Max enjoy cooking with Grandma?", "accepted": ["because she is patient and teaches him new recipes", "she is patient and teaches him new recipes", "she teaches him new recipes"], "points": 1 },
+        { "id": "reading-before-leave", "type": "text", "prompt": "What does Lena do before they leave?", "accepted": ["takes the rubbish out", "she takes the rubbish out"], "points": 1 }
+      ]
+    },
+    {
+      "title": "5 · Weekend writing",
+      "instructions": "Write 70–80 words about what you do at the weekend. Mention your morning routine, chores you do, what your family does, and what you like doing with friends or family.",
+      "questions": [
+        { "id": "weekend-writing", "type": "textarea", "prompt": "Write your paragraph here (70–80 words).", "review": "codex", "rubric": "Score up to 5 points: covers the requested ideas (2 points); uses present simple accurately (1 point); uses at least two chore or free-time expressions (1 point); uses clear spelling and connected sentences (1 point). Give concise feedback and quote corrections for any errors. Accept personal details and varied correct answers.", "points": 5 }
+      ]
+    }
+  ]
+}

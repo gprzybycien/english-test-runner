@@ -115,7 +115,7 @@ export default {
     const userPrompt = JSON.stringify({
       testTitle: body.test.title,
       testInstructions: body.test.instructions || "",
-      sections: body.test.sections.map(section => ({ title: section.title, instructions: section.instructions || "" })),
+      sections: body.test.sections.map(section => ({ title: section.title, instructions: section.instructions || "", passage: section.passage || "" })),
       questions: gradingInput
     });
 
