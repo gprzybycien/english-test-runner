@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Supermarket illustration">
-  <rect width="480" height="270" rx="24" fill="#edf4fb"/><path d="M54 67h372v154H54z" fill="#fff"/><path d="M72 94h132v26H72zm0 53h132v26H72zm204-53h132v26H276zm0 53h132v26H276z" fill="#d7e4ed"/>
-  <path d="M84 95h16v24H84zm29 0h22v24h-22zm53 0h15v24h-15zm-72 53h24v25H94zm39 0h18v25h-18zm37 0h18v25h-18zM291 95h21v24h-21zm42 0h18v24h-18zm-50 53h18v25h-18zm36 0h26v25h-26zm44 0h18v25h-18z" fill="#88b77b"/>
-  <path d="M179 194h120m-109 0-19 33m99-33 20 33m-25-58h68l-7 25h-55z" fill="none" stroke="#4e6d85" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="227" cy="226" r="9" fill="#4e6d85"/><circle cx="279" cy="226" r="9" fill="#4e6d85"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Supermarket storefront with a sign and shopping cart">
+  <rect width="480" height="270" rx="24" fill="#edf4fb"/>
+  <path d="M42 88 68 42h344l26 46v146H42z" fill="#fff"/>
+  <path d="M64 43h352v49H64z" fill="#4e6d85"/>
+  <text x="240" y="76" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="26" font-weight="700" letter-spacing="2">SUPERMARKET</text>
+  <path d="M42 92h396l-18 34H60z" fill="#f2c86f"/>
+  <path d="M60 126h220v90H60z" fill="#dcecf4"/>
+  <path d="M72 142h94v58H72zM177 142h91v58h-91z" fill="#fff"/>
+  <path d="M78 163h82M183 163h79" stroke="#d7e4ed" stroke-width="5"/>
+  <circle cx="96" cy="154" r="9" fill="#e96b52"/><circle cx="119" cy="154" r="9" fill="#edc94b"/><circle cx="143" cy="154" r="9" fill="#88b77b"/>
+  <path d="M289 126h128v90H289z" fill="#d7e4ed"/>
+  <path d="M309 126h89v90h-89z" fill="#fff"/><path d="M352 126v90" stroke="#d7e4ed" stroke-width="5"/>
+  <path d="M304 106h-7v-18m-15 18h7" stroke="#4e6d85" stroke-width="5" stroke-linecap="round"/>
+  <path d="M286 105h25l-5 14h-17z" fill="#4e6d85"/>
+  <path d="M328 170h12l11 39h54l10-29h-68" fill="none" stroke="#4e6d85" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="358" cy="222" r="6" fill="#4e6d85"/><circle cx="394" cy="222" r="6" fill="#4e6d85"/>
+  <path d="M75 220h330" stroke="#c4d6e1" stroke-width="6" stroke-linecap="round"/>
 </svg>
