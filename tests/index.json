@@ -3,7 +3,7 @@
     {
       "id": "unit-2-shopping",
       "title": "Unit 2 · Shopping and comparisons",
-      "file": "unit-2-shopping/test.json"
+      "file": "tests/unit-2-shopping/test.json"
     }
   ]
 }

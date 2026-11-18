@@ -13,12 +13,12 @@ Add a test folder beneath `tests/`, put its JSON and image files in that folder,
 ```json
 {
   "tests": [
-    { "id": "unit-2-shopping", "title": "Unit 2 · Shopping", "file": "unit-2-shopping/test.json" }
+    { "id": "unit-2-shopping", "title": "Unit 2 · Shopping", "file": "tests/unit-2-shopping/test.json" }
   ]
 }
 ```
 
-Images are referenced relative to that test's JSON file. Add `"image": { "src": "images/picture.svg", "alt": "A short description" }` to a question, or `"images": [...]` to a section. The page resolves these paths against the selected JSON file, so each test remains self-contained in its folder.
+Catalog `file` paths are relative to the site root. Images are referenced relative to that test's JSON file. Add `"image": { "src": "images/picture.svg", "alt": "A short description" }` to a question, or `"images": [...]` to a section. The page resolves image paths against the selected JSON file, so each test remains self-contained in its folder.
 
 Each question requires a unique `id`, `prompt`, and `type` (`text`, `textarea`, or `choice`). For local answer-key checking, add either an `answer` string or an `accepted` array. Choice questions also need an `options` array. Optional fields include `points`, `explanation`, `rubric`, and `review: "codex"` for responses that should be manually reviewed when the API is not configured.
 
