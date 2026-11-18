@@ -1,7 +1,7 @@
 {
   "id": "word-order-sentence-structure-practice",
   "title": "Szyk zdania · od SVO do pytań",
-  "topic": "Gramatyka angielska · Present Simple, Present Continuous, Past Simple",
+  "topic": "Gramatyka angielska · Present Simple i Present Continuous",
   "instructions": "Wpisz całe zdanie po angielsku. Zwróć uwagę na kolejność podmiotu, operatora i czasownika głównego. W twierdzeniach użyj zwykłego szyku SVO (podmiot + czasownik + dopełnienie). W pytaniach postaw operator przed podmiotem. Wielka litera i znak końcowy są mile widziane.",
   "studyGuide": {
     "title": "SVO — rozwiń, aby przypomnieć sobie szyk zdania",
@@ -26,31 +26,31 @@
         { "id": "svo-present", "type": "text", "prompt": "every morning / Emma / drinks / tea", "answer": "Emma drinks tea every morning", "points": 1, "explanation": "W twierdzeniu zacznij od podmiotu: Emma + drinks + tea." },
         { "id": "svo-present-plural", "type": "text", "prompt": "football / after school / play / The boys", "answer": "The boys play football after school", "points": 1, "explanation": "Podmiot The boys stoi przed czasownikiem play." },
         { "id": "svo-continuous", "type": "text", "prompt": "a book / is reading / Oliver / now", "answer": "Oliver is reading a book now", "points": 1, "explanation": "W Present Continuous użyj: podmiot + am/is/are + czasownik z -ing." },
-        { "id": "svo-past", "type": "text", "prompt": "yesterday / her room / cleaned / Mia", "answer": "Mia cleaned her room yesterday", "points": 1, "explanation": "W Past Simple w twierdzeniu użyj formy przeszłej czasownika: cleaned." }
+        { "id": "svo-simple-routine", "type": "text", "prompt": "every Saturday / her room / cleans / Mia", "answer": "Mia cleans her room every Saturday", "points": 1, "explanation": "W twierdzeniu użyj szyku SVO; przy Mia (she) czasownik w Present Simple ma końcówkę -s." }
       ]
     },
     {
       "title": "2 · Przeczenia: operator + not + forma podstawowa",
-      "instructions": "Zmień zdanie na przeczące. Po doesn't i didn't czasownik główny wraca do formy podstawowej. Z czasownikiem be użyj am/is/are + not.",
+      "instructions": "Zmień zdanie na przeczące. Po don't i doesn't czasownik główny ma formę podstawową. Z czasownikiem be użyj am/is/are + not.",
       "questions": [
         { "id": "negative-doesnt", "type": "text", "prompt": "She likes coffee. → (użyj doesn't)", "answer": "She doesn't like coffee", "accepted": ["She does not like coffee"], "points": 1, "explanation": "Końcówka -s przechodzi na operator does: doesn't like, nie doesn't likes." },
         { "id": "negative-dont", "type": "text", "prompt": "They watch TV in the morning. → (użyj don't)", "answer": "They don't watch TV in the morning", "accepted": ["They do not watch TV in the morning"], "points": 1, "explanation": "Po don't użyj podstawowej formy watch." },
         { "id": "negative-continuous", "type": "text", "prompt": "I am doing my homework now. → (użyj pełnego przeczenia)", "answer": "I am not doing my homework now", "accepted": ["I'm not doing my homework now"], "points": 1, "explanation": "W Present Continuous przeczenie tworzymy po be: am not doing." },
         { "id": "negative-continuous-they", "type": "text", "prompt": "The children are sleeping. → (użyj aren't)", "answer": "The children aren't sleeping", "accepted": ["The children are not sleeping"], "points": 1, "explanation": "Operator are przyjmuje not; czasownik pozostaje w formie sleeping." },
-        { "id": "negative-didnt", "type": "text", "prompt": "He went to school yesterday. → (użyj didn't)", "answer": "He didn't go to school yesterday", "accepted": ["He did not go to school yesterday"], "points": 1, "explanation": "Po didn't użyj formy podstawowej go, nie went." },
-        { "id": "negative-didnt-plural", "type": "text", "prompt": "We saw the match. → (użyj didn't)", "answer": "We didn't see the match", "accepted": ["We did not see the match"], "points": 1, "explanation": "Did pokazuje przeszłość, więc główny czasownik przyjmuje formę podstawową see." }
+        { "id": "negative-doesnt-walk", "type": "text", "prompt": "He walks to school every day. → (użyj doesn't)", "answer": "He doesn't walk to school every day", "accepted": ["He does not walk to school every day"], "points": 1, "explanation": "Końcówka -s przechodzi na operator does: doesn't walk." },
+        { "id": "negative-dont-play", "type": "text", "prompt": "We play tennis on Fridays. → (użyj don't)", "answer": "We don't play tennis on Fridays", "accepted": ["We do not play tennis on Fridays"], "points": 1, "explanation": "Po don't użyj podstawowej formy play." }
       ]
     },
     {
       "title": "3 · Pytania zamknięte: operator przed podmiotem",
-      "instructions": "Ułóż pytanie. W Present Simple i Past Simple operator stoi przed podmiotem; po do/does/did użyj formy podstawowej czasownika.",
+      "instructions": "Ułóż pytanie. W Present Simple operator do/does stoi przed podmiotem; w Present Continuous operator am/is/are stoi przed podmiotem.",
       "questions": [
         { "id": "question-do", "type": "text", "prompt": "you / Do / English / speak", "answer": "Do you speak English", "points": 1, "explanation": "Schemat: Do + podmiot + forma podstawowa czasownika." },
         { "id": "question-does", "type": "text", "prompt": "work / Does / your mum / here", "answer": "Does your mum work here", "points": 1, "explanation": "Does stoi przed podmiotem, a czasownik work nie ma końcówki -s." },
         { "id": "question-be-continuous", "type": "text", "prompt": "Are / they / dinner / making", "answer": "Are they making dinner", "points": 1, "explanation": "W Present Continuous przestaw be przed podmiot: Are they making…?" },
         { "id": "question-be-continuous-singular", "type": "text", "prompt": "Is / Anna / now / sleeping", "answer": "Is Anna sleeping now", "points": 1, "explanation": "Is stoi przed podmiotem Anna." },
-        { "id": "question-did", "type": "text", "prompt": "Did / the bus / arrive / on time", "answer": "Did the bus arrive on time", "points": 1, "explanation": "Did stoi przed podmiotem; po did użyj arrive." },
-        { "id": "question-did-irregular", "type": "text", "prompt": "Did / she / the message / read", "answer": "Did she read the message", "points": 1, "explanation": "Po did czasownik ma formę podstawową read." }
+        { "id": "question-do-friends", "type": "text", "prompt": "Do / your friends / near here / live", "answer": "Do your friends live near here", "points": 1, "explanation": "Do stoi przed podmiotem your friends, a potem podaj czasownik live." },
+        { "id": "question-be-continuous-dog", "type": "text", "prompt": "Is / the dog / in its bed / sleeping", "answer": "Is the dog sleeping in its bed", "points": 1, "explanation": "W pytaniu Present Continuous operator is stoi przed podmiotem the dog." }
       ]
     },
     {
@@ -59,8 +59,8 @@
       "questions": [
         { "id": "wh-where", "type": "text", "prompt": "she / Where / live / does", "answer": "Where does she live", "points": 1, "explanation": "Where + does + podmiot + forma podstawowa: Where does she live?" },
         { "id": "wh-what-continuous", "type": "text", "prompt": "What / the children / are / doing", "answer": "What are the children doing", "points": 1, "explanation": "What + are + podmiot + czasownik z -ing." },
-        { "id": "wh-when-past", "type": "text", "prompt": "When / your dad / did / come home", "answer": "When did your dad come home", "points": 1, "explanation": "When + did + podmiot + forma podstawowa come." },
-        { "id": "wh-why-past", "type": "text", "prompt": "Why / leave / they / did / early", "answer": "Why did they leave early", "points": 1, "explanation": "Why stoi na początku, przed operatorem did." }
+        { "id": "wh-what-present", "type": "text", "prompt": "What / your dad / after work / does / do", "answer": "What does your dad do after work", "points": 1, "explanation": "What + does + podmiot + forma podstawowa do. Pytanie zaczyna się od słowa Wh-." },
+        { "id": "wh-why-continuous", "type": "text", "prompt": "Why / are / they / laughing", "answer": "Why are they laughing", "points": 1, "explanation": "Why + are + podmiot + czasownik z -ing." }
       ]
     },
     {
@@ -69,7 +69,7 @@
       "questions": [
         { "id": "fix-does-s", "type": "text", "prompt": "Does he plays tennis?", "answer": "Does he play tennis", "points": 1, "explanation": "Po does używamy play, bez końcówki -s." },
         { "id": "fix-doesnt-s", "type": "text", "prompt": "My sister doesn't likes milk.", "answer": "My sister doesn't like milk", "accepted": ["My sister does not like milk"], "points": 1, "explanation": "Po doesn't czasownik ma formę podstawową: like." },
-        { "id": "fix-did-past", "type": "text", "prompt": "Did you saw the film?", "answer": "Did you see the film", "points": 1, "explanation": "Po did użyj see, nie saw." },
+        { "id": "fix-continuous-question", "type": "text", "prompt": "She is watching a film? (utwórz pytanie zamknięte)", "answer": "Is she watching a film", "points": 1, "explanation": "W pytaniu Present Continuous przestaw is przed podmiot she." },
         { "id": "fix-be-question", "type": "text", "prompt": "They are waiting outside? (utwórz pytanie zamknięte)", "answer": "Are they waiting outside", "points": 1, "explanation": "W pytaniu operator are przeskakuje przed podmiot they." },
         { "id": "fix-wh-order", "type": "text", "prompt": "Where she does work?", "answer": "Where does she work", "points": 1, "explanation": "Szyk: Where + does + she + work? Operator poprzedza podmiot." }
       ]
