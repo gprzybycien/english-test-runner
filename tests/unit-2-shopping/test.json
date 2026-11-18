@@ -1,0 +1,40 @@
+{
+  "id": "unit-2-shopping-practice",
+  "title": "Unit 2 · Shopping and comparisons",
+  "topic": "English · vocabulary and grammar",
+  "instructions": "Answer in English. For the shop names, include a/an when it is needed. For adjective forms, include “the” with each superlative.",
+  "sections": [
+    {
+      "title": "1 · Shops",
+      "instructions": "Write the names of the shops shown in the source test. Remember a/an where needed.",
+      "questions": [
+        { "id": "shop-fish", "type": "text", "prompt": "Name this kind of shop.", "image": { "src": "images/fish-shop.svg", "alt": "Illustration of fish at a market counter" }, "accepted": ["a fish shop", "fish shop", "a fishmonger's", "fishmonger's", "a fishmongers", "fishmongers"], "points": 1 },
+        { "id": "shop-greengrocer", "type": "text", "prompt": "Name this kind of shop.", "image": { "src": "images/greengrocers.svg", "alt": "Illustration of a fruit and vegetable shop" }, "accepted": ["a greengrocer's", "greengrocer's", "a greengrocers", "greengrocers", "a greengrocer shop", "greengrocer shop"], "points": 1 },
+        { "id": "shop-shoes", "type": "text", "prompt": "Name this kind of shop.", "image": { "src": "images/shoe-shop.svg", "alt": "Illustration of shoes displayed on shop shelves" }, "accepted": ["a shoe shop", "shoe shop", "a footwear shop", "footwear shop"], "points": 1 },
+        { "id": "shop-supermarket", "type": "text", "prompt": "Name this kind of shop.", "image": { "src": "images/supermarket.svg", "alt": "Illustration of supermarket aisles and a shopping cart" }, "accepted": ["a supermarket", "supermarket"], "points": 1 }
+      ]
+    },
+    {
+      "title": "2 · Comparative and superlative forms",
+      "instructions": "Complete both forms. Use a comparative in the first box and a superlative with “the” in the second.",
+      "questions": [
+        { "id": "strong-comparative", "type": "text", "prompt": "strong → comparative", "answer": "stronger", "points": 1 },
+        { "id": "strong-superlative", "type": "text", "prompt": "strong → superlative", "accepted": ["the strongest", "strongest"], "points": 1 },
+        { "id": "big-comparative", "type": "text", "prompt": "big → comparative", "answer": "bigger", "points": 1 },
+        { "id": "big-superlative", "type": "text", "prompt": "big → superlative", "accepted": ["the biggest", "biggest"], "points": 1 },
+        { "id": "large-comparative", "type": "text", "prompt": "large → comparative", "answer": "larger", "points": 1 },
+        { "id": "large-superlative", "type": "text", "prompt": "large → superlative", "accepted": ["the largest", "largest"], "points": 1 },
+        { "id": "happy-comparative", "type": "text", "prompt": "happy → comparative", "answer": "happier", "points": 1 },
+        { "id": "happy-superlative", "type": "text", "prompt": "happy → superlative", "accepted": ["the happiest", "happiest"], "points": 1 },
+        { "id": "expensive-comparative", "type": "text", "prompt": "expensive → comparative", "accepted": ["more expensive"], "points": 1 },
+        { "id": "expensive-superlative", "type": "text", "prompt": "expensive → superlative", "accepted": ["the most expensive", "most expensive"], "points": 1 },
+        { "id": "bad-comparative", "type": "text", "prompt": "bad → comparative", "answer": "worse", "points": 1 },
+        { "id": "bad-superlative", "type": "text", "prompt": "bad → superlative", "accepted": ["the worst", "worst"], "points": 1 },
+        { "id": "good-comparative", "type": "text", "prompt": "good → comparative", "answer": "better", "points": 1 },
+        { "id": "good-superlative", "type": "text", "prompt": "good → superlative", "accepted": ["the best", "best"], "points": 1 },
+        { "id": "far-comparative", "type": "text", "prompt": "far → comparative", "accepted": ["farther", "further"], "points": 1 },
+        { "id": "far-superlative", "type": "text", "prompt": "far → superlative", "accepted": ["the farthest", "farthest", "the furthest", "furthest"], "points": 1 }
+      ]
+    }
+  ]
+}

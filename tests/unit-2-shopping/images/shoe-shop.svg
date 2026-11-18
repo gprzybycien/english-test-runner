@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Shoe shop illustration">
+  <rect width="480" height="270" rx="24" fill="#f0eef9"/><rect x="52" y="43" width="376" height="183" rx="14" fill="#fff"/><path d="M75 104h330M75 164h330" stroke="#d7d3e7" stroke-width="9"/>
+  <path d="M103 92c18-7 25-21 29-31 9 12 20 20 38 25l40 11c11 3 18 10 15 18-2 6-8 9-19 9h-95c-14 0-22-12-8-32Z" fill="#db785e"/><path d="M260 93c18-7 25-21 29-31 9 12 20 20 38 25l40 11c11 3 18 10 15 18-2 6-8 9-19 9h-95c-14 0-22-12-8-32Z" fill="#5a6c9b"/>
+  <path d="M113 152c19-7 27-21 30-31 10 13 21 20 39 25l41 12c10 3 15 11 12 18-3 6-9 8-19 8h-96c-16 0-21-13-7-32Z" fill="#e5b653"/><path d="M265 152c19-7 27-21 30-31 10 13 21 20 39 25l41 12c10 3 15 11 12 18-3 6-9 8-19 8h-96c-16 0-21-13-7-32Z" fill="#477a64"/>
+</svg>

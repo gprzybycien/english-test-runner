@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Fruit and vegetable shop illustration">
+  <rect width="480" height="270" rx="24" fill="#eef6e6"/><path d="M67 83h346v132H67z" fill="#fff"/><path d="M52 78h376l-22-40H74z" fill="#4a8c5c"/><path d="M80 84h320v28H80z" fill="#f2c86f"/>
+  <path d="M97 180h286v35H97z" fill="#b97c49"/><circle cx="123" cy="151" r="21" fill="#e96b52"/><circle cx="165" cy="145" r="23" fill="#f2bf4a"/><circle cx="209" cy="153" r="20" fill="#e56a52"/><circle cx="252" cy="144" r="23" fill="#79ae5c"/><circle cx="298" cy="152" r="22" fill="#e96b52"/><circle cx="344" cy="145" r="23" fill="#f2bf4a"/>
+  <path d="M122 130q7-14 19-14m22 6q9-15 20-15m83 15q8-15 19-15m62 17q8-14 19-13" fill="none" stroke="#4a8c5c" stroke-width="7" stroke-linecap="round"/>
+</svg>

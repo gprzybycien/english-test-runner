@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Fish shop illustration">
+  <rect width="480" height="270" rx="24" fill="#e5f4f5"/><rect x="40" y="59" width="400" height="160" rx="18" fill="#fff"/><path d="M40 110h400M91 59v160m100-160v160m100-160v160m100-160v160" stroke="#b7d7d8" stroke-width="7"/>
+  <path d="M129 158c24-33 82-35 112-2-30 33-87 31-112 2Z" fill="#4c85a1"/><path d="m128 158-33-27v54z" fill="#35667f"/><circle cx="214" cy="151" r="5" fill="#fff"/>
+  <path d="M276 164c19-27 68-29 93-2-24 27-73 25-93 2Z" fill="#77b5c5"/><path d="m275 162-26-21v42z" fill="#4c8a9a"/><circle cx="346" cy="157" r="4" fill="#fff"/>
+  <path d="M68 87h31m101 0h34m100 0h35m70 0h-5" stroke="#e3a743" stroke-width="10" stroke-linecap="round"/>
+</svg>

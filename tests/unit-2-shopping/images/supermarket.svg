@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Supermarket illustration">
+  <rect width="480" height="270" rx="24" fill="#edf4fb"/><path d="M54 67h372v154H54z" fill="#fff"/><path d="M72 94h132v26H72zm0 53h132v26H72zm204-53h132v26H276zm0 53h132v26H276z" fill="#d7e4ed"/>
+  <path d="M84 95h16v24H84zm29 0h22v24h-22zm53 0h15v24h-15zm-72 53h24v25H94zm39 0h18v25h-18zm37 0h18v25h-18zM291 95h21v24h-21zm42 0h18v24h-18zm-50 53h18v25h-18zm36 0h26v25h-26zm44 0h18v25h-18z" fill="#88b77b"/>
+  <path d="M179 194h120m-109 0-19 33m99-33 20 33m-25-58h68l-7 25h-55z" fill="none" stroke="#4e6d85" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="227" cy="226" r="9" fill="#4e6d85"/><circle cx="279" cy="226" r="9" fill="#4e6d85"/>
+</svg>
